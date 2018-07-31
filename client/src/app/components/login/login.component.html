@@ -1,0 +1,19 @@
+
+<div class="main">
+
+<h1>{{header}}</h1>
+<div class="form">
+<span class="regis">registerd?</span>
+<input id="name" [(ngModel)]="userName" (keyup)='getError($event)' [ngClass]="{'error':nameValid}" type="text" class="inputsLogin" placeholder="Insert Name"/>
+<span *ngIf="nameValid">{{nameError}}</span>
+</div>
+<div class="form">
+<input [(ngModel)]="userId" id="id" (keyup)='getError($event)' [ngClass]="{'error':idValid}" type="text" class="inputsLogin" placeholder="Insert Id"/>
+<span *ngIf="idValid">{{idError}}</span>
+</div>
+<div class="bottom">
+<input type="button" (click)='login()' [disabled]="!loginValid" value="Login" class="loginBtn btn btn-success" />
+<a routerLink="/register" class="sign"><u>Sign Up</u></a>
+</div>
+
+</div>

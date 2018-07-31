@@ -1,0 +1,55 @@
+
+
+.main{
+    margin: auto;
+    position: relative;
+    text-align: center;
+    width: 500px;
+    padding: 5px;
+    box-shadow: 0 3px 8px 0 rgba(172, 181, 185, 0.4);
+    background-color: #ffffff;
+    border: solid 0.8px rgba(207, 216, 220, 0.2);
+    border-radius: 10px;
+}
+
+.topSpace{
+    position: relative;
+    height: 40px;
+}
+
+.goHome{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+}
+
+.goHome:hover{
+cursor: pointer;
+}
+
+.top{
+    height: 40px;
+}
+
+.form{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 200px;
+    margin: auto;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+
+.mailSpan{
+    position: absolute;
+    left:14px;
+}
+
+.radioBtn{
+    margin-right: 10px;
+}

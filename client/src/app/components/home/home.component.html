@@ -1,0 +1,45 @@
+
+<router-outlet></router-outlet>
+<app-top-bar></app-top-bar>
+<div class="searchDiv" *ngIf='showAdmin'>
+  <input type="text" class="searchBox" [(ngModel)]='searchUserName' (keyup)='searchUser()' placeholder="search user by name"/> 
+  <input type="button" class="addBtn btn-info" value='Add Admin' (click)='addAdmin()'  />   
+</div>
+<div *ngIf='showUser' class="main">
+
+<div class="userDiv" *ngFor="let user of userList; let i = index">
+<p>{{user.name}}</p>
+<p>{{user.email}}</p>
+<span (click)='editUser(user)' class="glyphicon glyphicon-pencil"></span>
+<span *ngIf='getRole(user.role)' (click)='deleteUser(user)' class="glyphicon glyphicon-trash"></span>
+<img src="http://localhost:4000/pictures/{{user.img}}" onError="this.src='./../../../assets/images/userImage.png';" /><br>
+<span (click)='showDateails($event,i)' class="MoreSpan"><u>More Details</u></span>
+<div class="detailsDiv">
+    <p>Age:{{user.age}}</p>
+    <p>Gender:{{user.gender}}</p>
+</div>
+</div>
+
+</div>
+
+<app-edit [checkIfAdmin]='checkIfAdmin' [user]="currentUser" *ngIf="showEdit"></app-edit>
+
+<div class="main1" *ngIf='showAddForm'> 
+    <h1>Add Admin</h1>
+    <span (click)='backHome()' class="glyphicon glyphicon-remove"></span>
+    <div class="form">
+        <input id="name" [(ngModel)]="userName" (keyup)='getError($event)' [ngClass]="{'error':nameValid}" type="text" class="inputsLogin" placeholder="Insert Name"/>
+        <span *ngIf="nameValid">{{nameError}}</span>
+        </div>
+        <div class="form">
+        <input [(ngModel)]="userMail" id="mail" (keyup)='getError($event)' [ngClass]="{'error':mailValid}" type="text" class="inputsLogin" placeholder="Insert Mail"/>
+        <span *ngIf="mailValid">{{mailError}}</span>
+        </div>
+        <div class="form">
+        <input [(ngModel)]="userId" id="id" (keyup)='getError($event)' [ngClass]="{'error':idValid}" type="text" class="inputsLogin" placeholder="Insert Id"/>
+        <span *ngIf="idValid">{{idError}}</span>
+        </div>
+        <div class="bottom">
+        <input type="button" (click)='addOneAdmin()'  [disabled]="!addValid" value="Add" class="loginBtn btn btn-success" />
+    </div>
+</div>

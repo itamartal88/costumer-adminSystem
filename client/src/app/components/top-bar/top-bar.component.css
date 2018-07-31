@@ -1,0 +1,28 @@
+
+
+.top{
+    height: 40px;
+}
+
+.topBarBottom {
+    width: 100%;
+    height: 1px;
+    background-color: #e8e8e8;
+  }
+
+  .btn-danger{
+    position: absolute;
+    right: 0;
+    margin: 5px;
+    border-radius: 3px;
+  }
+
+  .userSpan{
+  position: absolute;
+  left: 0;
+  margin: 5px;
+  font-family: 'Merienda', cursive;
+  }
+
+  
+

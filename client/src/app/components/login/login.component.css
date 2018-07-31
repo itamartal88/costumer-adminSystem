@@ -1,0 +1,67 @@
+
+
+.main{
+    text-align: center;
+    width: 50%;
+    position: relative;
+    margin: auto;
+}
+
+.form{
+    margin-top: 20px;
+    display: block;
+    position: relative;
+    width: 215px;
+    height: 50px;
+    left: 34%;
+    border-radius: 2px
+}
+
+.bottom{
+    position: relative;  
+}
+
+.sign{
+    position: relative;
+    top: 10px;
+}
+
+.sign:hover{
+    cursor: pointer;
+}
+
+.form span:last-child{
+    color: red;
+}
+
+.regis{
+    position: absolute;
+    left: 0;
+    top:-20px;
+}
+
+.inputsLogin{
+    width: 100%;
+    height: 80%;
+    padding: 5px;
+    display: block;
+}
+
+h1{
+    margin-bottom: 100px;
+}
+
+.loginBtn{
+    margin-top: 20px;
+    display: block;
+    left: 34%;
+    position: relative;
+    width: 214px;
+    height: 32px;
+    border-radius: 2px;
+    color: black;
+}
+
+.error{
+    border: 1px solid red !important;
+}
