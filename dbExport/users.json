@@ -1,0 +1,7 @@
+
+
+{"_id":{"$oid":"5b5e3cc7ec6eac65e418bbfc"},"name":"itamar","id":"888888888","role":"admin","age":28,"email":"talitamar91@gmail.com","gender":"Male","img":"beers.jpg"}
+{"_id":{"$oid":"5b5fa7948bfa95693093a964"},"name":"Avidan","email":"ahah@c.co","id":"454654555","role":"admin","age":28,"gender":"Male","img":"seat.jpg","__v":0}
+{"_id":{"$oid":"5b5fa8868bfa95693093a965"},"name":"tot","email":"kjkj@co.cola","id":"789789789","role":"user","age":28,"gender":"Female","img":"store.jpg","__v":0}
+{"_id":{"$oid":"5b603046ed7c5e746409da93"},"name":"ofer","email":"haha@po.co","id":"123123123","role":"user","age":22,"gender":"Male","img":"userImage.png","__v":0}
+{"_id":{"$oid":"5b60305bed7c5e746409da94"},"name":"moti","email":"lsl@ko.co","id":"123123127","role":"user","age":22,"gender":"Male","img":"userImage.png","__v":0}
