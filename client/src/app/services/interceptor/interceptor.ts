@@ -21,7 +21,7 @@ return next.handle(authReq)
   console.log("Error Occurred");
   console.log(error);
    return Observable.throw(error);
-   }) as any;)
+   }) as any)
  }
 }
 
